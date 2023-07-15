@@ -11,11 +11,11 @@ from constructs import Construct
 class ResourceStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
-        queue = sqs.Queue(
-            self, "AWSCDKCodePipelineappDemoQueue",
-            visibility_timeout=Duration.seconds(300),
-            queue_name="demo_queue"
-        )
+        # queue = sqs.Queue(
+        #     self, "AWSCDKCodePipelineappDemoQueue",
+        #     visibility_timeout=Duration.seconds(300),
+        #     queue_name="demo_queue"
+        # )
         # function = function_lambda.Function(self,
         #                                     "DemoCDKGITHUBLambda",
         #                                     function_name="codepipeline_lambda",
