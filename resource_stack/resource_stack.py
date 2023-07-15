@@ -13,7 +13,7 @@ class ResourceStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
-        # Define the Lambda execution role
+        # Define the lambda execution role
         lambda_execution_role = iam.Role(
             self,
             "LambdaExecutionRole",
