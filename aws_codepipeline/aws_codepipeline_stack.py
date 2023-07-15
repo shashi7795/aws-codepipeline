@@ -56,5 +56,5 @@ class AwsCodepipelineStack(Stack):
 
         deployment_wave.add_stage(DeployStage(
             self, 'DeployStage',
-            env=(Environment(account='209891200762', region='us-east-1'))
+            env=cdk.Environment(account='209891200762', region='us-east-1')
         ))
