@@ -8,6 +8,7 @@ from aws_cdk import (
     aws_codepipeline as codepipeline
 )
 from constructs import Construct
+import aws_cdk as cdk
 from resource_stack.resource_stack import ResourceStack
 
 
