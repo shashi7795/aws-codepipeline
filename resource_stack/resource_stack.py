@@ -16,13 +16,13 @@ class ResourceStack(Stack):
             visibility_timeout=Duration.seconds(300),
             queue_name="demo_queue"
         )
-        function = function_lambda.Function(self,
-                                            "DemoCDKGITHUBLambda",
-                                            function_name="codepipeline_lambda",
-                                            runtime=function_lambda.Runtime.PYTHON_3_9,
-                                            code=function_lambda.Code.from_asset('./lambda_code_demo'),
-                                            handler="demo_lambda.lambda_handler")
+        # function = function_lambda.Function(self,
+        #                                     "DemoCDKGITHUBLambda",
+        #                                     function_name="codepipeline_lambda",
+        #                                     runtime=function_lambda.Runtime.PYTHON_3_9,
+        #                                     code=function_lambda.Code.from_asset('./lambda_code_demo'),
+        #                                     handler="demo_lambda.lambda_handler")
 
-        bucket = s3.Bucket(self, "MyfirstBucket", versioned=True,
-                           bucket_name="shashi-bucket",
-                           block_public_access=s3.BlockPublicAccess.BLOCK_ALL)
+        # bucket = s3.Bucket(self, "MyfirstBucket", versioned=True,
+        #                    bucket_name="shashi-bucket",
+        #                    block_public_access=s3.BlockPublicAccess.BLOCK_ALL)
