@@ -31,7 +31,7 @@ class AwsCodepipelineStack(Stack):
 
         code_pipeline = codepipeline.Pipeline(
             self, "Pipeline",
-            pipeline_name="new-pipeline",
+            pipeline_name="code-pipeline-demo",
             cross_account_keys=False
         )
 
