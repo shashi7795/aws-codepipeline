@@ -30,7 +30,7 @@ class ResourceStack(Stack):
         function = function_lambda.Function(self,
                                             "shashi-demo",
                                             function_name="codepipeline_lambda",
-                                            runtime=function_lambda.Runtime.PYTHON_3_7,
+                                            runtime=function_lambda.Runtime.PYTHON_3_8,
                                             code=function_lambda.Code.from_asset('./lambda_code_demo'),
                                             handler="demo_lambda.lambda_handler",
                                             role=lambda_execution_role)
